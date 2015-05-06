@@ -1,33 +1,143 @@
-/*#articleTeaser {
-	width: 100%;
-	height: 100vh;
-}*/
+.hidden {
+  display: none;
+}
+
 .item {
 	top: 0;
 	left: 0;
 	position: fixed;
+  padding-top: 50px;
 	width: 100%;
 	height: 100vh;
-}
-.articleItem {
-	display: block;
-	top:-100;
-	width: 100%;
-	height: 100vh;
-	background-color: #fff;
-	
 }
 
-.hidden {
-	display: none;
+h5 {
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  opacity: .7;
+}
+
+iframe {
+  position:relative;
+  top:100%;
+  z-index:51;
+  position:fixed;
+  background-color:#fff;
+}
+.article {
+  position:relative;
+	width: 100%;
+	height: 100vh;
+	background-color: #fff;	
+}
+
+.cOne {
+  color: #fff;
+  background-color: #263147;
+}
+.cOne h5 {
+  color: #fff;
+}
+.cTwo {
+  color: #fff;
+  background-color: #738aa1;
+}
+.cTwo h5 {
+  color: #fff;
+}
+.cThree {
+  color: #fff;
+  background-color: #f8971c;
+}
+.cThree h5 {
+  color: #fff;
+}
+.cFour {
+  color: #fff;
+  background-color: #583450;
+}
+.cFour h5 {
+  color: #fff;
+}
+.cFive {
+  color: #fff;
+  background-color: #abc7e1;
+}
+.cFive h5 {
+  color: #fff;
+}
+.cSix {
+  color: #fff;
+  background-color: #f05522;
+}
+.cSix h5 {
+  color: #fff;
+}
+.cSeven {
+  color: #fff;
+  background-color: #f9af7e;
+}
+.cSeven h5 {
+  color: #fff;
+}
+
+.cEight {
+  color: #fff;
+  background-color: #385d81;
+}
+.cEight h5 {
+  color: #fff;
+}
+.cNine {
+  color: #fff;
+  background-color: #224412;
+}
+.cNine h5 {
+  color: #fff;
+}
+.cTen {
+  color: #fff;
+  background-color: #946E8C;
+}
+.cTen h5 {
+  color: #fff;
+}
+.cEleven {
+  color: #fff;
+  background-color: #A4A16A;
+}
+.cEleven h5 {
+  color: #fff;
+}
+.cTwelve {
+  color: #fff;
+  background-color: #642A2A;
+}
+.cTwelve h5 {
+  color: #fff;
 }
 
 .right {
-    -webkit-animation-name: right; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: .4s; /* Chrome, Safari, Opera */
+    -webkit-animation-name: right;
+    -webkit-animation-duration: .3s;
     -webkit-animation-fill-mode: forwards;
     animation-name: right;
-    animation-duration: .4s;
+    animation-duration: .3s;
 }
 
 @-webkit-keyframes right {
@@ -43,11 +153,11 @@
 }
 
 .left {
-    -webkit-animation-name: left; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: .4s; /* Chrome, Safari, Opera */
+    -webkit-animation-name: left;
+    -webkit-animation-duration: .3s;
     -webkit-animation-fill-mode: forwards;
     animation-name: left;
-    animation-duration: .4s;
+    animation-duration: .3s;
 }
 
 @-webkit-keyframes left {
@@ -63,8 +173,8 @@
 }
 
 .up {
-    -webkit-animation-name: up; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: .4s; /* Chrome, Safari, Opera */
+    -webkit-animation-name: up;
+    -webkit-animation-duration: .4s;
     -webkit-animation-fill-mode: forwards;
     animation-name: up;
     animation-duration: .4s;
@@ -77,59 +187,27 @@
   }
 
   100% {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
   }
 }
 
-/* Card Color General */
+.down {
+    -webkit-animation-name: down;
+    -webkit-animation-duration: .4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: down;
+    animation-duration: .4s;
+}
 
-.cOne {
-	color: #fff;
-	background-color: #263147;
-}
-.cOne h5 {
-	color: #fff;
-}
-.cTwo {
-	color: #fff;
-	background-color: #738aa1;
-}
-.cTwo h5 {
-	color: #fff;
-}
-.cThree {
-	color: #fff;
-	background-color: #f8971c;
-}
-.cThree h5 {
-	color: #fff;
-}
-.cFour {
-	color: #fff;
-	background-color: #385d81;
-}
-.cFour h5 {
-	color: #fff;
-}
-.cFive {
-	color: #fff;
-	background-color: #abc7e1;
-}
-.cFive h5 {
-	color: #fff;
-}
-.cSix {
-	color: #fff;
-	background-color: #f05522;
-}
-.cSix h5 {
-	color: #fff;
-}
-.cSeven {
-	color: #fff;
-	background-color: #f9af7e;
-}
-.cSeven h5 {
-	color: #fff;
+@-webkit-keyframes down {
+  0% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+
+  100% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
 }
