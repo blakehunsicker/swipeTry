@@ -454,7 +454,10 @@
 				})
 				$('.news').swipe({
 					swipeDown:function(event, direction, distance, duration, fingerCount, fingerData) {
-					    $(this).toggleClass('up down');
+					    $(this)
+					    	.removeClass('up')
+					    	.addClass('up down')
+					    	.hide();
 					}
 				})
 			});
