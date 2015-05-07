@@ -53,6 +53,17 @@
 		      		<i class="positive fa fa-arrow-right fa-2x"></i>
 		      	</div>
 			</div>
+			<div class="news container">
+				<h4>secondslide</h4>
+				<img src="https://img.washingtonpost.com/wp-apps/imrs.php?src=https://img.washingtonpost.com/rf/image_908w/2010-2019/Wires/Images/2015-04-30/AP/Pot_Sniffing_Dogs-0458c.jpg&w=1484" />
+				<h2>A byproduct of legalized marijuana in Oregon: Unemployed police dogs</h2>
+				<h4 class="byLine"><small>By</small> Peter Holley <small>May 3</small></h4>
+				<p>In their heyday, Narc and Cody, two drug-sniffing pooches employed by the Medford, Ore., Police Department, were valued weapons in the war against drugs.</p>
+				<p>Narc, a Belgian Malinois, is trained to sit when he smells a drug, while Cody, a Lab mix, freezes in place when he picks up on an illegal substance.</p>
+				<p>Sgt. D.J. Graham, who oversees the department’s drug-sniffing dog program, called both 5-year-old canines “model employees.”</p>
+				<p>“They’re both very friendly and both hard-working and have high energy,” he told The Washington Post. “They’re both very focused when it comes to their work and they work for cheap: food and play.”</p>
+				<p>When marijuana becomes legal on July 1, it seems, they’ll find themselves in the same position as a lot of skilled, middle-aged employees in a rapidly evolving economy: unemployed.</p>
+			</div>
 		</div>
 		<div class="item cThree" style="z-index:98;">
 			<div class="teaserInfo col-xs-10 col-xs-push-1">
@@ -449,7 +460,7 @@
 					    $(this).addClass('right');
 					},
 					swipeUp:function(event, direction, distance, duration, fingerCount, fingerData) {
-					    $('.news').addClass('up');
+					    $(this).closest('.news').addClass('up');
 					}
 				})
 				$('.news').swipe({
