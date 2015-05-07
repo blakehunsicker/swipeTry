@@ -31,8 +31,8 @@
 			      		<i class="positive fa fa-arrow-right fa-2x"></i>
 			      	</div>
 				</div>
-				<iframe src="http://www.washingtonpost.com/news/morning-mix/wp/2015/05/03/a-byproduct-of-legalized-marijuana-in-oregon-unemployed-police-dogs/">
-			</iframe>
+		<iframe src="http://www.washingtonpost.com/news/morning-mix/wp/2015/05/03/a-byproduct-of-legalized-marijuana-in-oregon-unemployed-police-dogs/">
+		</iframe>
 		</div>
 		<div class="item cTwo" style="z-index:99;">
 			<div class="teaserInfo col-xs-10 col-xs-push-1">
@@ -44,6 +44,8 @@
 		      		<i class="positive fa fa-arrow-right fa-2x"></i>
 		      	</div>
 			</div>
+			<iframe src="http://www.nytimes.com/2015/05/05/us/garland-texas-shooting-muhammad-cartoons.html?ref=us&_r=0">
+			</iframe>
 		</div>
 		<div class="item cThree" style="z-index:98;">
 			<div class="teaserInfo col-xs-10 col-xs-push-1">
@@ -440,10 +442,10 @@
 					    $(this).addClass('right');
 					},
 					swipeUp:function(event, direction, distance, duration, fingerCount, fingerData) {
-					    $('iframe').addClass('up');
+					    $(this).closest('iframe').addClass('up');
 					}
 				})
-				$(news).swipe({
+				$('iframe').swipe({
 					swipeDown:function(event, direction, distance, duration, fingerCount, fingerData) {
 					    $(this).toggleClass('down');
 					}
