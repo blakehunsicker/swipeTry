@@ -451,7 +451,9 @@
 
 			$(function(){
 				var upFront = $('.item');
-				var news = $('iframe')
+				var news = $('.news');
+
+
 			    $(upFront).swipe({
 			        swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
 					    $(this).addClass('left');
@@ -460,15 +462,13 @@
 					    $(this).addClass('right');
 					},
 					swipeUp:function(event, direction, distance, duration, fingerCount, fingerData) {
-					    $(this).closest('.news').addClass('up');
+					    $('.news').addClass('up');
 					}
 				})
 				$('.news').swipe({
 					swipeDown:function(event, direction, distance, duration, fingerCount, fingerData) {
-					    $(this)
-					    	.removeClass('up')
-					    	.addClass('up down')
-					    	.hide();
+					    $('.news').removeClass('up');
+					    $(this).addClass('down').hide();
 					}
 				})
 			});
