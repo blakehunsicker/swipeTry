@@ -22,7 +22,7 @@
 	<!-- Cards Panel-->
 	<div id="articleTeaser">
 		<div class="item cOne" style="z-index:100;">
-			<div class="teaserInfo col-xs-10 col-xs-push-1">
+			<div class="col-xs-10 col-xs-push-1 teaserInfo">
 				<h5>POT DOGS</h5>
 				<h2>With marijuana legalization, unemployment is up—for drug-sniffing police dogs</h2>
 				<h4>The Washington Post</h4>
@@ -461,16 +461,16 @@
 					swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
 					    $(this).addClass('right');
 					},
-					swipeUp:function(event, direction, distance, duration, fingerCount, fingerData) {
-					    $('.news').addClass('up');
-					}
+					// swipeUp:function(event, direction, distance, duration, fingerCount, fingerData) {
+					//     $(this).addClass('up');
+					// }
 				})
-				$('.news').swipe({
-					swipeDown:function(event, direction, distance, duration, fingerCount, fingerData) {
-					    $('.news').removeClass('up');
-					    $(this).addClass('down').hide();
-					}
-				})
+				// $('.news').swipe({
+				// 	swipeDown:function(event, direction, distance, duration, fingerCount, fingerData) {
+				// 	    $('.news').removeClass('up');
+				// 	    $(this).addClass('down').hide();
+				// 	}
+				// })
 			});
 			var upFront = $('.item');
 			$('.negative').click(function() {
